@@ -1,3 +1,36 @@
+CREATE TABLE clients(
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(100) UNIQUE NOT NULL,
+  date_regist DATE DEFAULT CURRENT_DATE
+);
+
+CREATE TABLE products(
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  price DECIMAL(10,2) NOT NULL,
+  stock INT NOT NULL
+);
+
+CREATE TABLE orders(
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  client_id INT NOT NULL,
+  date_order DATE DEFAULT CURRENT_DATE,
+  FOREIGN KEY(client_id) REFERENCES clients(id)
+);
+
+
+CREATE TABLE items_oders(
+  id INT AUTO_INCREMENT PRIMARY KEY, 
+  order_id INT NOT NULL, 
+  product_id INT NOT NULL,
+  quantity INT NOT NULL,
+  unity_price DECIMAL(10,2) NOT NULL,
+  FOREIGN KEY(order_id) REFERENCES orders(id),
+  FOREIGN KEY(product_id) REFERENCES products(id)
+);
+
+
 
 
 
