@@ -10,16 +10,20 @@ INSERT INTO products (name,preco,stock) VALUES
 ('Monitor', 149.99,10),
 ('Headphones', 49.99,25);
 
-INSERT INTO orders (client_id) VALUES
+INSERT INTO orders(client_id) VALUES
 (1),
 (2),
-(1);
+(1),
+(3),
+(2),
+(4);
 
-INSERT INTO items_orders (orders_id, products_id, quantity, price_unity) VALUES
-(1, 1, 2, 15.99),  -- 2 ratos
-(1, 2, 1, 29.99),  -- 1 teclado
-(2, 3, 1, 149.99), -- 1 monitor
-(3, 4, 2, 49.99);  -- 2 headphones
+INSERT INTO items_orders (order_id, product_id, quantity, unity_price) VALUES
+(1, 1, 2, 15.99),  -- 2 mouse
+(1, 2, 1, 29.99),  -- 1 keyboard
+(2, 3, 1, 149.99), -- 1 screen
+(3, 4, 2, 49.99),  -- 2 headphones
+(2, 3, 2, 149.99); -- 2 screens
 
 
 
