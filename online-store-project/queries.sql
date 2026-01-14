@@ -26,6 +26,12 @@ FROM clients c
 JOIN orders o ON c.id = o.client_id
 GROUP BY c.name; --Total orders per client
 
+Select avg(total_order) as avg_order_value
+FROM(
+SELECT o.id , sum(i.unity_price * i.quantity) as total_order
+FROM orders o
+JOIN items_orders i ON o.id = i.order_id
+GROUP BY o.id) a; --Average Value of Orders
 
 
 
