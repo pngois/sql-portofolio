@@ -21,7 +21,10 @@ Select * from clients
 where month(date_regist) = month(current_date())
 and year(date_regist) = year(current_date()); --See all the clients regist from this month
 
-
+SELECT c.name,count(o.id) as total_orders
+FROM clients c
+JOIN orders o ON c.id = o.client_id
+GROUP BY c.name; --Total orders per client
 
 
 
