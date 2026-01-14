@@ -8,9 +8,14 @@ SELECT * FROM orders; --Select all the data from the orders table
 SELECT * FROM items_order
 WHERE order_id = 1; --See a specific order
 
-SELECT c.name, SUM(i.quantity * i.price_unity) AS total
+SELECT 
+    c.name,
+    SUM(i.quantity * i.unity_price) AS total
 FROM clients c
-JOIN
+JOIN orders e ON c.id = e.client_id
+JOIN items_orders i ON e.id = i.order_id
+GROUP BY c.name
+ORDER BY total DESC;
 
 
 
