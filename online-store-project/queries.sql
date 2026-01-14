@@ -17,6 +17,10 @@ JOIN items_orders i ON e.id = i.order_id
 GROUP BY c.name
 ORDER BY total DESC; --See all the total expenses per client
 
+Select * from clients
+where month(date_regist) = month(current_date())
+and year(date_regist) = year(current_date()); --See all the clients regist from this month
+
 
 
 
