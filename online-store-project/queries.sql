@@ -15,7 +15,7 @@ FROM clients c
 JOIN orders e ON c.id = e.client_id
 JOIN items_orders i ON e.id = i.order_id
 GROUP BY c.name
-ORDER BY total DESC;
+ORDER BY total DESC; --See all the total expenses per client
 
 
 
