@@ -10,7 +10,7 @@ INSERT INTO products (name,preco,stock) VALUES
 ('Monitor', 149.99,10),
 ('Headphones', 49.99,25);
 
-INSERT INTO orders VALUES
+INSERT INTO orders (client_id) VALUES
 (1),
 (2),
 (1);
