@@ -29,7 +29,9 @@ SELECT
     (CAST(Quantity AS SIGNED) * CAST(UnitPrice AS DECIMAL(10,2))) AS total_sales,
     
     -- 5. If Client ID is empty, change to NULL
-    NULLIF(CustomerID, '') AS Client_ID
+    NULLIF(CustomerID, '') AS Client_ID,
+
+    Country
     
 FROM stg_vendas_ecommerce
 -- 6. Filter just what we need (remove trash data)
