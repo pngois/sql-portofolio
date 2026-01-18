@@ -16,3 +16,4 @@ Average Ticket = DIVIDE([Total Revenue], [Total Orders]);
 
 
 
+<img width="1146" height="644" alt="image" src="https://github.com/user-attachments/assets/b7021857-a36c-4e82-970b-837753b3dae6" />
