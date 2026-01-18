@@ -37,3 +37,6 @@ WHERE Quantity > 0
   AND UnitPrice > 0 
   AND Description NOT LIKE 'POSTAGE%' -- Remove shipping cost (if we want to focus only in products)
   AND Description <> '';
+
+( -- Check the view 
+  SELECT * FROM vw_sales_clean LIMIT 100;) -- Test
