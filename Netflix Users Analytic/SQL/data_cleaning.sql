@@ -31,3 +31,17 @@ CASE
  
  -- Check the view 
   SELECT * FROM vw_netflix_analytics LIMIT 100;-- Test
+
+-- Performance: Power BI loads a summary table of 20 or 30 rows much faster than one with thousands
+-- Organization
+CREATE OR REPLACE VIEW vw_resume_netflix AS
+SELECT 
+    Country,
+    Subscription_Type,
+    COUNT(User_ID) AS Total_Users,
+    ROUND(AVG(Age), 0) AS AVG_Age,
+    ROUND(SUM(Watch_Time_Hours), 2) AS Total_Visualization_Hours,
+    ROUND(AVG(Watch_Time_Hours), 2) AS AVG_Hours_Per_User
+FROM netflix_users
+GROUP BY Country, Subscription_Type;
+
