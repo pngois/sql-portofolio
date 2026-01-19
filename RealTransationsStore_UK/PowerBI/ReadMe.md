@@ -12,7 +12,9 @@ In this stage, the focus was on transforming the data processed in SQL into an i
 ## DAX measures created:
 
 Total Revenue = SUM(v_sales[total_sales]);
+
 Total Orders = DISTINCTCOUNT(v_sales[InvoiceNo]);
+
 Average Ticket = DIVIDE([Total Revenue], [Total Orders]);
 
 
