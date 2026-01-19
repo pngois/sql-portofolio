@@ -1,6 +1,6 @@
-# Project: Netflix User Analytics
+# Project: Netflix Userbase & Subscription Analysis
 
-## CONTEXT
+## Overview
 
 This project analyzes a Netflix user database which contains 25,000 fictional Netflix user records generated for analysis, visualization, and machine learning practice.
 It includes demographic details, subscription type, watch time, and login history for each user.
