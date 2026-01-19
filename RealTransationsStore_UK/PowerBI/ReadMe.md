@@ -23,5 +23,12 @@ Average Ticket = DIVIDE([Total Revenue], [Total Orders]);
 
 
 
+
+
+
+
+
+
+
 Don't forget to connect with me on LinkedIn: 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pedro-santos01/)
