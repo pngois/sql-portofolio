@@ -1,4 +1,7 @@
-## Vizualization and Business Inteligent 
+<img width="1146" height="644" alt="image" src="https://github.com/user-attachments/assets/b7021857-a36c-4e82-970b-837753b3dae6" />
+
+
+## Visualization and Business Inteligent 
 
 In this stage, the focus was on transforming the data processed in SQL into an intuitive dashboard for decision-making:
 
@@ -19,4 +22,4 @@ Average Ticket = DIVIDE([Total Revenue], [Total Orders]);
 
 
 
-<img width="1146" height="644" alt="image" src="https://github.com/user-attachments/assets/b7021857-a36c-4e82-970b-837753b3dae6" />
+
