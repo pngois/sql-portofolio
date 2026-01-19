@@ -10,5 +10,5 @@ The company mainly sells unique all-occasion gifts. Many customers of the compan
 
 
 
-Dont forget to connect with me on LinkedIn: 
+Don't forget to connect with me on LinkedIn: 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pedro-santos01/)
